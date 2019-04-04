@@ -1,5 +1,5 @@
 
-
+"找出一串字符中最大和最小数字并输出"
 
 def high_and_low(numbers):
   a = ' '.join(numbers.split())

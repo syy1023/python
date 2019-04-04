@@ -1,42 +1,17 @@
-'''
-def validate_pin(pin):
-
-
-    if len(pin) == 4 or len(pin ) == 6:
-        # return True
-        for x in pin:
-            if x.isdigit():
-                #print(x)
-                continue
-            else:
-                #print("Wrong output for" + x)
-                return False
-   # else:
-
-      #  return False
-
-
-print(validate_pin("12.0"))
-print(validate_pin("120"))
-print(validate_pin("1230"))
-
-
-import re
-
-def validate_pin(pin):
-  return re.search('^(\d{4}|\d{6})$', pin) != None 
-
-'''
-
-import re
-
-def validate_pin(pin):
-  return re.search('^(\d{4}|\d{6})$', pin) != None
-
-
-print(validate_pin("122222"))
+def high_and_low(numbers):
+  a = ' '.join(numbers.split())
+  l = list(map(int, a.split()))
+  m = sorted(l)
+  d = str(m[-1]) + " " + str(m[0])
+  return d
 
 
 
 
+  # ...
+  #return numbers
+numbers="4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"
 
+Test.assert_equals(high_and_low("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"), "542 -214");
+
+high_and_low(numbers)

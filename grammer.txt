@@ -1,0 +1,23 @@
+
+字符串常用方法：
+len(): 计算字符串长度，如len("abcdefg")
+find()/index(): 查找字符串中某个字符第一次出现的索引(index()方法查找不到会报错), 如"abcdefg".find("b"); "abcedfgg".index("g")
+lower()/upper(): 将字符串转换为全小写/大写,如"AbcdeF".lower();"abcedF".upper()
+isdigit()/isalpha()/isalnum(): 判断字符串是否纯数字/纯字母/纯数字字母组合, 如isdigit("123"),结果为 True
+count(): 查询字符串中某个元素的数量,如"aabcabc".count("a")
+join(): 将列表元素按字符串连接,如"".join(["a","b","c"])会按空字符连接列表元素,得到"abc"
+replace(): 替换字符串中的某已部分,如"hello,java".replace("java", "python"),将java 替换为 python
+split(): 和join相反,将字符串按分隔符分割成列表, 如"a,b,c,d".split(",")得到["a", "b", "c", "d"]
+strip()/lstrip()/rstrip(): 去掉字符串左右/左边/右边的无意字符(包括空格,换行等非显示字符),如" this has blanks \n".strip()得到"this has balnks"
+
+
+
+列表操作
+
+赋值: l = [1, "hello", ("a", "b")]
+获取: a = l[0] # 通过索引获取
+增: l.append("c");l.extend(["d","e"]);l+["f"]
+删: l.pop() # 按索引删除,无参数默认删除最后一个;l.remove("c") # 按元素删除
+改:l[1]="HELLO" # 通过索引修改
+查: 遍历 for i in l: print(i)
+
